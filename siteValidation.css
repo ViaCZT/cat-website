@@ -1,0 +1,34 @@
+.validation-results {
+    padding: 20px;
+}
+
+.validation-results h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.validation-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.validation-item {
+    flex: 1 1 calc(50% - 40px);
+    max-width: 600px;
+    text-align: center;
+}
+
+.validation-item img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.validation-item p {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #333;
+}

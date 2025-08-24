@@ -1,0 +1,237 @@
+#index-background2 {
+    width: 100%;
+    /* 让图片宽度自动调整到容器的100% */
+    height: auto;
+    /* 高度自动，保持图片比例 */
+    display: block;
+    /* 避免图片下方出现空隙 */
+}
+
+body {
+    background-color: #FBF6F0;
+    font-family: "Lucida Calligraphy", cursive, serif, sans-serif;
+}
+
+li {
+    font-size: 20px;
+    word-spacing: 3px;
+    line-height: 2;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+
+/* ---------style for heading------------- */
+h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 70px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.content p {
+    color: white;
+    font-family: "Comic Sans MS", cursive, sans-serif
+}
+
+h4 {
+    color: steelblue;
+    font-size: 16px;
+}
+
+h2 {
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+h2,
+h4 {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.contain .content {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    /* Fallback color */
+    background: rgba(0, 0, 0, 0.5);
+    /* Black background with 0.5 opacity */
+    color: #000000;
+    width: 100%;
+    /* padding: 20px; */
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+
+/* ----------style for guide menu---------- */
+.menu {
+    overflow: hidden;
+    background-color: lightblue;
+}
+
+#nav {
+    overflow: hidden;
+    background-color: lightblue;
+}
+
+.menu a {
+    float: left;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "Arial Black", Gadget, sans-serif;
+}
+
+/* style for sub menu */
+#subnav {
+    float: left;
+    overflow: hidden;
+}
+
+/* button for sub menu */
+#subnav .subnavbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    font-family: "Arial Black", Gadget, sans-serif;
+}
+
+/* color for the hover */
+.menu a:hover,
+#subnav:hover .subnavbtn {
+    background-color: rgb(252, 252, 252);
+}
+
+/* set the content of sub menu */
+#subnav-content {
+    display: none;
+    position: absolute;
+    left: 7px;
+    background-color: rgb(255, 255, 255);
+    width: 99%;
+    z-index: 1;
+}
+
+#subnav-content a {
+    float: left;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: "Arial Black", Gadget, sans-serif;
+}
+
+#subnav-content a:hover {
+    background-color: lightgray;
+    color: black;
+}
+
+#subnav:hover #subnav-content {
+    display: block;
+}
+
+
+/* ----------style for  picture----------- */
+#history img {
+    float: left;
+    margin-right: 20px;
+    border: 5px solid #555
+}
+
+
+#menu img {
+    position: fixed;
+    clip: rect(0 2500px 600px 0);
+    width: 1000px;
+    background: white;
+    height: 95px;
+}
+
+#content img {
+    float: left;
+    margin-right: 30px;
+    border: 8px solid #555
+}
+
+.icon-bar img {
+    float: right;
+    margin-right: 30px;
+    margin-top: 5px;
+}
+
+
+.contain {
+    /* The image used */
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* Needed to position the navbar */
+    position: relative;
+}
+
+
+/* ------------Style for dropdown button and content------ */
+#subnav {
+    float: left;
+    overflow: hidden;
+}
+
+/* button for sub menu*/
+#subnav .subnavbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    font-family: "Arial Black", Gadget, sans-serif;
+
+}
+
+/* color for the hover */
+.menu a:hover,
+#subnav:hover .subnavbtn {
+    background-color: rgb(252, 252, 252);
+}
+
+/* set the content of sub menu */
+#subnav-content {
+    display: none;
+    position: absolute;
+    left: 7px;
+    background-color: rgb(255, 255, 255);
+    width: 99%;
+    z-index: 1;
+}
+
+#subnav-content a {
+    float: left;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: "Arial Black", Gadget, sans-serif;
+}
+
+#subnav-content a:hover {
+    background-color: lightgray;
+    color: black;
+}
+
+
+#subnav:hover #subnav-content {
+    display: block;
+}

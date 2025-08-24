@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang=en>
+<!-- ========= HEADER section ========== -->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="darkMode.css">
+    <title>Purrfect Companions</title>
+</head>
+
+
+<!-- ========== BODY section ============ -->
+
+<body>
+
+<!-- Heading for the title at the top of the page -->
+
+<!-- background -->
+<div class="contain">
+    <img src="image/index-background2.jpg" id="index-background2" alt="photo of a kitten as background">
+    <div class="content">
+        <h1 class="glow"><img src="image/logo1.png" width=100 alt="logo1">Purrfect Companions: <br> A Deep Dive into the
+            World of Cats</h1>
+        <p>Welcome to Via's Cats World! Have a nice trip here!</p>
+    </div>
+</div>
+
+<!-- navigation bar -->
+<div class="menu">
+    <div id="index-nav">
+        <a href="index.html">Home</a>
+        <div id="subnav">
+            <button class="subnavbtn">About Me & My Site<i class="fa fa-caret-down"></i></button>
+            <div id="subnav-content">
+                <a href="aboutme.html">About Me</a>
+                <a href="aboutMySite.html">About My Site</a>
+                <a href="siteValidation.html">Site Validation</a>
+            </div>
+        </div>
+        <a href="photoGallery.html">Photo Gallery</a>
+        <a href="sitemap.html">Site map</a>
+        <a href="sourcelog.html">Source Log</a>
+        <a href="Feedback.html">Give feedback</a>
+        <a href="assignment.html">Assignment Page</a>
+    </div>
+</div>
+
+
+<!-- Call-To-Actions 1 -->
+<div id="cta1" class="cta-section cta-one">
+    <img src="image/index-cta-1.jpg" alt="Cat Lying Down" class="cta-image">
+    <div class="cta-content">
+        <h3>Discover Our World</h3>
+        <p>Join us in the fascinating world of cats and explore the unique stories and secrets behind these majestic
+            creatures.</p>
+        <a href="sitemap.html" class="btn btn-primary">Discover More</a>
+    </div>
+</div>
+
+
+<!-- main content -->
+<h2 id="whyCatsTitle">-Why Cats?-</h2>
+<div class="image-container">
+    <div class="text">
+        <p>
+            Cats are one of the most popular pets in the world.
+            They are known for their independence, intelligence, and affectionate nature.
+            Cats have been domesticated for thousands of years and have played an important
+            role in human society. They are also fascinating creatures with unique behaviors
+            and characteristics. Whether you are a cat owner or just a cat lover, there is
+            always something new to learn about these amazing animals.
+        </p>
+    </div>
+</div>
+
+<h2 id="historyTitle">-Where do cats come from?-</h2>
+<div id="history">
+    <div class="history-container">
+        <img src="image/index-history.jpg" alt="photo of brick as history section background">
+        <p>
+            Cats have been domesticated for thousands of years.
+            The earliest evidence of domesticated cats dates back to ancient Egypt,
+            where they were revered as sacred animals. Cats were also kept as pets
+            in ancient Greece and Rome, and they were brought to Europe by the
+            Romans. In the Middle Ages, cats were associated with witchcraft and
+            were often persecuted. However, they eventually became popular pets
+            in Europe and were brought to the Americas by European settlers. Today,
+            cats are one of the most popular pets in the world and are kept by millions
+            of people in every country.
+        </p>
+    </div>
+</div>
+
+<div class="main">
+    <h2 id="breedsTitle">-What are the different breeds of cats?-</h2>
+    <p>
+        There are many different breeds of cats, each with its own unique
+        characteristics and personality.
+    </p>
+    <h4>Here are the Top 4 Most Popular Cat Breeds</h4>
+
+    <!-- first row of Portfolio Gallery Grid -->
+    <div class="row">
+        <div class="column">
+            <div class="content">
+                <img src="image/ragdoll-1.jpg" alt="ragdoll-1">
+                <h3>Ragdoll</h3>
+                <p>The Ragdoll is a docile, gentle, unusually relaxed animal with a decidedly even disposition. </p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="content">
+                <img src="image/exotic-shorthair-1.jpg" alt="exotic-shorthair-1">
+                <h3>Exotic Shorthair</h3>
+                <p>Known as the lazy man’s Persian, the Exotic Shorthair has the body type and easygoing nature of the
+                    Persian
+                    but without the coat length and need for daily grooming. </p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="content">
+                <img src="image/british-shorthair-1.jpg" alt="british-shorthair-1">
+                <h3>British Shorthair</h3>
+                <p>The British Shorthair – or the “Brit,” as it is sometimes affectionately called - is an easygoing,
+                    intelligent, friendly breed. </p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="content">
+                <img src="image/persian-cat-1.jpg" alt="persian-cat-1">
+                <h3>Persian</h3>
+                <p>The Persian, also known as the Persian Longhair, is an elegant, graceful, gentle breed whose most
+                    distinguishing characteristics are its remarkable coat and its unique head. </p>
+            </div>
+        </div>
+        <!-- END of first GRID -->
+    </div>
+</div>
+
+
+<!-- Call-To-Actions 2 -->
+<div id="cta2" class="cta-section cta-two">
+    <img src="image/index-cta-2.jpg" alt="Letters Carved Using Wood" class="cta-image">
+    <div class="cta-content">
+        <h3>Share Your Feedback</h3>
+        <p>Your opinions and ideas are invaluable to us. Share your thoughts and help us improve your experience.</p>
+        <a href="Feedback.html" class="btn btn-secondary">Give us Feedback!</a>
+    </div>
+</div>
+
+
+<!-- Dark Mode -->
+<button onclick="toggleDarkMode()" class="darkButton" id="darkModeToggle">Toggle Dark Mode</button>
+<!-- Inline script to check if dark mode is enabled -->
+<script>
+    window.onload = function () {
+      console.log("Inline script: Page loaded. Dark mode setting:", localStorage.getItem('darkMode'));
+    }
+
+</script>
+<script src="script.js"></script>
+
+
+<!-- Feed for a social networking  -->
+<h2 id="socialFeedTitle">-Social Feed-</h2>
+<p>Check out our social feed for the latest updates and news about cats!</p>
+<!-- Place <div> tag where you want the feed to appear -->
+<div id="curator-feed-default-feed-layout"><a href="https://curator.io" target="_blank"
+                                              class="crt-logo crt-tag">Powered by Curator.io</a>
+</div>
+
+<!-- The Javascript can be moved to the end of the html page before the </body> tag -->
+<script>
+      /* curator-feed-default-feed-layout */
+      (function () {
+        var i, e, d = document, s = "script"; i = d.createElement("script"); i.async = 1; i.charset = "UTF-8";
+        i.src = "https://cdn.curator.io/published/03a7f337-b5e8-43c4-b6f8-d5503f09c38a.js";
+        e = d.getElementsByTagName(s)[0]; e.parentNode.insertBefore(i, e);
+      })();
+
+</script>
+
+
+</body>
+
+</html>

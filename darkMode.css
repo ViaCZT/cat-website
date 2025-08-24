@@ -1,0 +1,106 @@
+/* -------------for black mode----------- */
+.dark {
+    background-color: #121212;
+    /* 暗背景颜色 */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.dark #history {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    width: 100%;
+    height: 500px;
+}
+
+body {
+    transition: background-color 0.3s ease;
+}
+
+.dark a {
+    color: #330e5e;
+    /* 链接颜色 */
+}
+
+/* -------------dark heading------------ */
+.dark h2 {
+    color: pink;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.dark h4 {
+    color: rgb(255, 78, 161);
+    font-size: 16px;
+}
+
+.dark h1 {
+    color: pink;
+    font-weight: bold;
+    font-size: 70px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* --------------dark menu---------------*/
+.dark #index-nav {
+    overflow: hidden;
+    background-color: lightpink;
+}
+
+.dark #index-nav a {
+    float: left;
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 12px 12px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Arial Black", Gadget, sans-serif;
+    ;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.dark #index-nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.dark .content {
+    padding: 16px;
+}
+
+
+
+/* ----------black mode bottom------------- */
+.darkButton {
+    padding: 10px 20px;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #000000;
+    border: none;
+    border-radius: 9px;
+    box-shadow: 0 9px #999;
+    margin-left: 150px;
+
+    position: fixed;
+    /* 或 absolute，根据需要选择 */
+    top: 20px;
+    /* 顶部距离 */
+    right: 20px;
+    /* 右侧距离 */
+    z-index: 1000;
+    /* 确保按钮不会被其他元素覆盖 */
+}
+
+.darkButton:hover {
+    background-color: steelblue
+}
+
+.darkButton:active {
+    background-color: #3B5998;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}

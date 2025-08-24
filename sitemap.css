@@ -1,0 +1,24 @@
+.main-content {
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.main-content li {
+    padding: 8px;
+    margin: 5px 0;
+}
+
+.main-content a {
+    text-decoration: none;
+    /* color: #007BFF; */
+}
+
+.main-content ul ul {
+    padding-left: 20px;
+}
+
+.main-content li:hover {
+    background-color: #ddd;
+}

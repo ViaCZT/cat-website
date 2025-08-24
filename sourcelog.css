@@ -1,0 +1,41 @@
+.source-log-table {
+    margin: 20px;
+}
+
+.source-log-table h2 {
+    color: #333;
+    padding-left: 20px;
+}
+
+.source-log-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    word-spacing: 3px;
+    line-height: 2;
+}
+
+.source-log-table th, .source-log-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.source-log-table th {
+    background-color: #f2f2f2;
+}
+
+.source-log-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.source-log-table a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.source-log-table a:hover {
+    text-decoration: underline;
+}

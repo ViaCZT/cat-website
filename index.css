@@ -1,0 +1,227 @@
+/* ---------style for Why Cats--------- */
+.image-container {
+  background-image: url("image/index-background1.jpg");
+  background-size: cover;
+  position: relative;
+  height: 500px;
+}
+
+.text {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  font-size: 30px; 
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 10px;
+  width: 80%;
+  height:80%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: screen;
+}
+
+
+/* -------style for Where do cats come from (history)-------- */
+#history p {
+  font-size: 20px;
+  word-spacing: 3px;
+  line-height: 2;
+  padding-top: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 25px;
+  letter-spacing: 2px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+/* History section: image left, text right, responsive */
+#history {
+  background-color: rgba(97, 142, 193, 0.1);
+  width: 100%;
+  /* 高度交给内容自适应，避免溢出 */
+  height: auto; /* Make the height adapt to content to avoid overflow */
+}
+
+#history .history-container {
+  display: flex;
+  align-items: stretch;     /* Align top edges for a neater look */ /* 顶部对齐，让视觉更整齐 */
+  gap: 20px;                  /* Space between image and text */ /* 图片与文字的间距 */
+  max-width: 1000px;          /* limit line length */ /* 可选：限制一行过长 */
+  margin: 0 auto;             /* center content */ /* 可选：居中内容 */
+  padding: 10px 0;            /* vertical padding */ /* 可选：上下留白 */
+}
+
+#history .history-container img {
+  /* 让图片“适度”占宽：最小 220px，常态约 35vw，上限 420px */
+  /* Make the image reasonably sized: min 220px, normally ~35vw, max 420px */
+  width: clamp(220px, 35vw, 420px);
+  height: auto;               /* Keep aspect ratio */ /* 等比缩放 */
+  flex: 0 0 auto;             /* Fix its width, not squeezed by text */ /* 固定自身宽度，不被文本挤压 */
+  display: block;
+  object-fit: cover;      /* Crop/fill to keep ratio, avoid stretching */ /* 裁切/填充以保持比例，避免拉伸 */
+  /* 可选美化：圆角与轻微阴影 */
+  /* rounded corners and slight shadow */
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.06);
+}
+
+#history .history-container p {
+  flex: 1 1 auto;             /* Text takes remaining space */ /* 文本占据剩余空间 */
+  line-height: 1.75;
+  margin: 0;
+  text-align: justify;   /* Justify text */ /* 文字两端对齐 */
+}
+
+/* On small screens, switch to vertical layout */ /* 小屏幕时改为上下布局 */
+@media (max-width: 768px) {
+  #history .history-container {
+    flex-direction: column;
+  }
+  #history .history-container img {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+
+/* -------------style for Breeds--------- */
+.main * {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.main body {
+  background-color: #ffffff;
+  padding: 20px;
+  font-family: Arial;
+}
+
+
+/* Center website */
+.main {
+  margin: auto;
+}
+
+.main p{
+ color: #000;
+}
+
+.main h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+ .row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: rgb(253, 253, 253);
+  padding: 10px;
+}
+
+
+/* ----------style for CTA background ----------- */ 
+     
+.cta-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 40px 0;
+  padding: 20px;
+  background-color: #f8f9fa; /* Slight gray background */ /* 轻微灰色背景 */
+  border-radius: 8px; /* Rounded corners */ /* 圆角边框 */
+}
+
+.cta-image {
+  width: 40%; /* Adjust image width */ /* 调整图片宽度 */
+  height: auto;
+  border-radius: 8px;
+}
+
+.cta-content {
+  width: 50%; /* Adjust content width */ /* 调整内容宽度 */
+  padding-left: 20px; /* Spacing between content and image */ /* 内容与图片之间的间距 */
+}
+
+.cta-content h3 {
+  font-size: 24px; /* Title font size */ /* 标题字号 */
+  color: #333; /* Title color */ /* 标题颜色 */
+  margin-bottom: 10px; /* Spacing with description text */ /* 与描述文字的间距 */
+}
+
+.cta-content p {
+  font-size: 16px; /* Description text font size */ /* 描述文字字号 */
+  color: #666; /* Description text color */ /* 描述文字颜色 */
+  margin-bottom: 20px; /* Spacing with button */ /* 与按钮的间距 */
+}
+
+
+
+/* ----------style for CTA button ----------- */      
+
+.btn {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  display: inline-block;
+}
+
+.btn-primary {
+  background-color: #ff6699;
+  transition: all 0.3s ease; /* Smooth transition effect */ /* 平滑过渡效果 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow effect */ /* 添加阴影效果 */
+}
+
+.btn-primary:hover {
+  background-color: #f63575; /* Background color change on hover */ /* 悬停时的背景颜色变化 */
+  transform: translateY(-2px); /* Slight upward movement for click feel */ /* 轻微上移，增加点击感 */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Strengthen shadow effect */ /* 加强阴影效果 */
+}
+
+.header-cta {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.btn-secondary {
+  background-color: lightseagreen;
+  transition: all 0.3s ease; /* Smooth transition effect */ /* 平滑过渡效果 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow effect */ /* 添加阴影效果 */
+}
+
+.btn-secondary:hover {
+  background-color: #139b94; /* Background color change on hover */ /* 悬停时的背景颜色变化 */
+  transform: translateY(-2px); /* Slight upward movement for click feel */ /* 轻微上移，增加点击感 */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Strengthen shadow effect */ /* 加强阴影效果 */
+}
+
+.body-cta {
+  text-align: center;
+  margin: 40px 0;
+}

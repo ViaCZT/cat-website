@@ -1,0 +1,120 @@
+.feedback-form {
+    margin: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.feedback-form h2 {
+    color: #333;
+}
+
+.feedback-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback-form label {
+    margin-top: 10px;
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"],
+.feedback-form select,
+.feedback-form textarea {
+    width: 100%;
+    max-width: 100%;
+    padding: 18px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* 包括内边距和边框在内的总宽度 */
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    /* Adds some space above the buttons */
+    gap: 20px;
+    /* Adds space between the buttons */
+}
+
+.feedback-form input[type="submit"],
+.feedback-form input[type="reset"] {
+    font-size: 16px;
+    /* color: white; */
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    /* margin-top: 10px; */
+    width: auto;
+    /* Adjusts the width of the buttons to fit their content */
+    min-width: 120px;
+    /* Ensures buttons have a minimum width, adjust as needed */
+}
+
+.feedback-form input[type="submit"] {
+    background-color: lightblue;
+}
+
+.feedback-form input[type="reset"] {
+    background-color: lightgreen;
+}
+
+.feedback-form input[type="submit"]:hover {
+    background-color: #3fa5e9;
+}
+
+.feedback-form input[type="reset"]:hover {
+    background-color: #06c041;
+}
+
+
+/* Create two columns that float next to eachother */
+.column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+    flex: 1;
+    padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row {
+    display: flex;
+    justify-content: space-between; 
+    align-items: start; 
+    margin: 0 auto;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*  Specific adjustment of image and form widths */
+/* picture column */
+.column:first-child {
+    flex: 1; 
+}
+
+/* form column */
+.column:last-child {
+    flex: 1;
+}
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}

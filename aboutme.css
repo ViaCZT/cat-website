@@ -1,0 +1,47 @@
+/* -------style for main content-------- */
+#introduce {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(97, 142, 193, 0.1);
+}
+
+.image-container, .text-container {
+    flex: 1;
+}
+
+.image-container {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center images vertically */
+    gap: 20px; /* Add some space between images */
+}
+
+.text-container {
+    flex-grow: 1;
+    max-width: 60%; /* Limit the maximum width of the text container */
+    padding: 10px;
+    margin-right: 50px;
+}
+
+/* Adjustments to text styles */
+.text-content {
+    font-size: 20px;
+    word-spacing: 3px;
+    line-height: 2;
+    padding-bottom: 15px;
+    letter-spacing: 1px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: justify;
+}
+
+
+/*style for image */
+#introduce img {
+    width: 100%; /* Make images responsive */
+    max-width: 450px; /* Adjust max width as needed */
+    border: 5px solid #555;
+    object-fit: cover; /* Adjust this as needed to control how images are scaled/cropped */
+}
+
+  

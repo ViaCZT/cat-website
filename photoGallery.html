@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<!-- ========= HEADER section ========== -->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="photoGallery.css">
+    <title>Photo Gallery</title>
+</head>
+
+<!-- ========== BODY section ============ -->
+
+<body>
+
+    <!-- Heading for the title at the top of the page -->
+
+    <!-- background -->
+    <div class="contain">
+        <img src="image/index-background2.jpg" id="index-background2" alt="photo of a kitten as background">
+        <div class="content">
+            <h1 class="glow"><img src="image/logo1.png" width=100 alt="logo1">Photo Gallery</h1>
+            <p>Welcome to the Photo Gallery page! This page showcases a collection of beautiful images of cats from
+                around the world. Enjoy!</p>
+        </div>
+    </div>
+
+    <!-- navigation bar -->
+    <div class="menu">
+        <div id="index-nav">
+            <a href="index.html">Home</a>
+            <div id="subnav">
+                <button class="subnavbtn">About Me & My Site<i class="fa fa-caret-down"></i></button>
+                <div id="subnav-content">
+                    <a href="aboutme.html">About Me</a>
+                    <a href="aboutMySite.html">About My Site</a>
+                    <a href="siteValidation.html">Site Validation</a>
+                </div>
+            </div>
+            <a href="photoGallery.html">Photo Gallery</a>
+            <a href="sitemap.html">Site map</a>
+            <a href="sourcelog.html">Source Log</a>
+            <a href="Feedback.html">Give feedback</a>
+            <a href="assignment.html">Assignment Page</a>
+        </div>
+    </div>
+
+    <!-- main content -->
+    <h2 id="CatBreedGalleryTitle">Cat Breed Gallery</h2>
+    <h4>Click the image to know the breed of the cat and more!</h4>
+
+    <!--for small image in the row-->
+    <div class="row">
+        <div class="column">
+            <img src="image/maine-coon-1.png" style="width:100%" onclick="openbox();currentSlide(1)"
+                class="hover-shadow cursor" alt="maine-coon-1">
+        </div>
+        <div class="column">
+            <img src="image/american-shorthair-1.png" style="width:100%" onclick="openbox();currentSlide(2)"
+                class="hover-shadow cursor" alt="american-shorthair-1">
+        </div>
+        <div class="column">
+            <img src="image/devon-rex-1.png" style="width:100%" onclick="openbox();currentSlide(3)"
+                class="hover-shadow cursor" alt="devon-rex-1">
+        </div>
+        <div class="column">
+            <img src="image/sphynx-1.png" style="width:100%" onclick="openbox();currentSlide(4)"
+                class="hover-shadow cursor" alt="sphynx-1">
+        </div>
+        <div class="column">
+            <img src="image/scottish-fold-1.png" style="width:100%" onclick="openbox();currentSlide(5)"
+                class="hover-shadow cursor" alt="scottish-fold-1">
+        </div>
+        <div class="column">
+            <img src="image/abyssinian-1.png" style="width:100%" onclick="openbox();currentSlide(6)"
+                class="hover-shadow cursor" alt="abyssinian-1">
+        </div>
+        <div class="column">
+            <img src="image/oriental-shorthair-1.png" style="width:100%" onclick="openbox();currentSlide(7)"
+                class="hover-shadow cursor" alt="oriental-shorthair-1">
+        </div>
+        <div class="column">
+            <img src="image/siamese-1.png" style="width:100%" onclick="openbox();currentSlide(8)"
+                class="hover-shadow cursor" alt="siamese-1">
+        </div>
+        <div class="column">
+            <img src="image/norwegian-forest-cat-1.png" style="width:100%" onclick="openbox();currentSlide(9)"
+                class="hover-shadow cursor" alt="norwegian-forest-cat-1">
+        </div>
+        <div class="column">
+            <img src="image/cornish-rex-1.png" style="width:100%" onclick="openbox();currentSlide(10)"
+                class="hover-shadow cursor" alt="cornish-rex-1">
+        </div>
+    </div>
+
+    <!--show the slides in full screen within light box-->
+    <div id="mybox" class="box">
+        <span class="close cursor" onclick="closebox()">&times;</span>
+        <div class="box-content">
+            <div class="mySlides">
+                <div class="numbertext">1 / 10</div>
+                <img src="image/maine-coon-1.png" style="width:100%" alt="Maine Coon">
+                <p class="description">
+                    Maine Coons are known for their large size, with females averaging up to 16 pounds and
+                    males up to 18, with some tipping the scales at 20-plus pounds. With a long, shaggy coat
+                    that lays close to the body, a bushy long tail, tufted paw pads and large ears adorned
+                    with furry tufts and "lynx tips" on top, their build reflects the Maine Coon's origins
+                    in the cold Northeast.
+                </p>
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">2 / 10</div>
+                <img src="image/american-shorthair-1.png" style="width:100%" alt="American Shorthair">
+                <p class="description">
+                    The American Shorthair is known for its longevity, robust health, calm disposition,
+                    good looks, friendliness and gentleness. It is a true native American breed that comes
+                    in a variety of colors, although it does not come in a pointed pattern like that of
+                    the Siamese. The best known American Shorthairs are the dramatically marked silver tabbies,
+                    which have been popular in commercial advertisements and movies.
+                </p>
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">3 / 10</div>
+                <img src="image/devon-rex-1.png" style="width:100%" alt="Devon Rex">
+                <p class="description">
+                    The Devon Rex is a breed of unique appearance. Its large eyes, short muzzle, prominent
+                    cheekbones, and huge ears create a characteristic elfin look. Hard and muscular; slender;
+                    medium length; broad chest; medium fine boning; body carried high on the legs. Modified
+                    wedge; head broad but slightly longer than broad; face full-cheeked with pronounced
+                    cheekbones and a whisker break; in profile, nose has strongly marked stop; muzzle short
+                    and well developed; prominent whisker break; chin strong and well developed. All colors
+                    and patterns including the Himalayan pattern.
+                </p>
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">4 / 10</div>
+                <img src="image/sphynx-1.png" style="width:100%" alt="Sphynx">
+                <p class="description">
+                    The hairless Sphynx is muscular with broad ears and a wide-eyed, friendly expression.
+                    This sweet-natured, lively cat is inquisitive and loves being the center of attention.
+                    A devoted, affectionate feline, the Sphynx follows her human companions everywhere,
+                    purring with delight. This breed does not do well when left alone all day. The Sphynx
+                    is a healthy, hardy cat.
+                </p>
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">5 / 10</div>
+                <img src="image/scottish-fold-1.png" style="width:100%" alt="Scottish Fold">
+                <p class="description">
+                    With her uniquely folded ears, round face and wide eyes, the Scottish Fold is described
+                    as looking like a pixie, an owl or a teddy bear. A mellow, loving breed, this cat adapts
+                    easily to new environments and enjoys adults, children and other pets. The Scottish Fold
+                    usually bonds to one person, following you from room to room like a loyal puppy. This
+                    playful, intelligent breed has two coat varieties, longhair and shorthair.
+                </p>
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">6 / 10</div>
+                <img src="image/abyssinian-1.png" style="width:100%" alt="Abyssinian">
+                <p class="description">
+                    The Abyssinian is thought by some to be one of the very oldest of all breeds of domestic
+                    cats. Abyssinians resemble the sculptural and painted representations of ancient Egyptian
+                    cats – they are medium in size, muscular yet elegant, with long, well-arched necks, large
+                    alert ears, long legs and exotic, almond-shaped eyes.
+                </p>
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">7 / 10</div>
+                <img src="image/oriental-shorthair-1.png" style="width:100%" alt="Oriental Shorthair">
+                <p class="description">
+                    The Oriental is a svelte cat with long tapering lines, very lithe but muscular.
+                    Long and svelte, a distinctive combination of fine bones and firm muscles; shoulders
+                    and hips continue same sleek lines of tubular body. Long tapering wedge; no break at
+                    whiskers; skull flat; muzzle fine and wedge-shaped; chin and jaw medium size; nose
+                    long and straight, no break.
+                </p>
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">8 / 10</div>
+                <img src="image/siamese-1.png" style="width:100%" alt="Siamese">
+                <p class="description">
+                    An ancient breed, the Siamese is considered the quintessential people cat because
+                    she loves being with her human companions. The sleek, striking Siamese has deep
+                    blue almond-shaped eyes that radiate intelligence and emotion. Affectionately known
+                    as Meezers, this breed is sociable, entertaining and playful.
+                </p>
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">9 / 10</div>
+                <img src="image/norwegian-forest-cat-1.png" style="width:100%" alt="Norwegian Forest Cat">
+                <p class="description">
+                    The Norwegian Forest Cat is a strong, solid, muscular cat that is somewhat similar
+                    in type to the Maine Coon. It has been suggested that the Norwegian is an early
+                    ancestor of the Maine Coon and perhaps of the long-haired Manx variety, as well.
+                    Called the “Norsk Skaukatt” in its homeland, this cat has a long, dense double coat,
+                    with a coarse outer layer covering a thick, wooly undercoat that makes it virtually
+                    water-proof even in the heaviest of rainstorms.
+                </p>
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">10 / 10</div>
+                <img src="image/cornish-rex-1.png" style="width:100%" alt="Cornish Rex">
+                <p class="description">
+                    The Cornish Rex is distinguished from all other breeds by its extremely soft,
+                    wavy coat and racy type. Smallest to Small; torso long and slender, not tubular;
+                    back is naturally arched; shoulders well knit; rump rounded and well muscled.
+                    Comparatively small and egg-shaped; length about one-third greater than width;
+                    definite whisker break; oval with gently curving outline; muzzle narrowing
+                    slightly to rounded end; cheekbones high and prominent; nose Roman with high
+                    prominent bridge.
+                </p>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <!-- show the slides through using the method set in Javascript -->
+            <div class="column">
+                <img class="demo cursor" src="image/maine-coon-1.png" style="width:100%" onclick="currentSlide(1)"
+                    alt="Maine Coon">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="image/american-shorthair-1.png" style="width:100%"
+                    onclick="currentSlide(2)" alt="American Shorthair">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="image/devon-rex-1.png" style="width:100%" onclick="currentSlide(3)"
+                    alt="Devon Rex">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="image/sphynx-1.png" style="width:100%" onclick="currentSlide(4)"
+                    alt="Sphynx">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="image/scottish-fold-1.png" style="width:100%" onclick="currentSlide(5)"
+                    alt="Scottish Fold">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="image/abyssinian-1.png" style="width:100%" onclick="currentSlide(6)"
+                    alt="Abyssinian">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="image/oriental-shorthair-1.png" style="width:100%"
+                    onclick="currentSlide(7)" alt="Oriental Shorthair">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="image/siamese-1.png" style="width:100%" onclick="currentSlide(8)"
+                    alt="Siamese">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="image/norwegian-forest-cat-1.png" style="width:100%"
+                    onclick="currentSlide(9)" alt="Norwegian Forest Cat">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="image/cornish-rex-1.png" style="width:100%" onclick="currentSlide(10)"
+                    alt="Cornish Rex">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

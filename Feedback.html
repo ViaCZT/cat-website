@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- ========= HEADER section ========== -->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Feedback.css">
+    <title>Feedback</title>
+</head>
+
+<!-- ========== BODY section ============ -->
+
+<body>
+    <!-- Heading for the title at the top of the page -->
+    <div class="contain">
+        <img src="image/index-background2.jpg" id="index-background2" alt="photo of a kitten as background">
+        <div class="content">
+            <h1 class="glow"><img src="image/logo1.png" width=100 alt="logo1">Feed Back</h1>
+            <p>Thank you for visiting my website! I hope you found it informative and enjoyable. If you have any
+                feedback or suggestions, please feel free to leave them here. I would love to hear from you!</p>
+        </div>
+    </div>
+
+    <!-- navigation bar -->
+    <div class="menu">
+        <div id="index-nav">
+            <a href="index.html">Home</a>
+            <div id="subnav">
+                <button class="subnavbtn">About Me & My Site<i class="fa fa-caret-down"></i></button>
+                <div id="subnav-content">
+                    <a href="aboutme.html">About Me</a>
+                    <a href="aboutMySite.html">About My Site</a>
+                    <a href="siteValidation.html">Site Validation</a>
+                </div>
+            </div>
+            <a href="photoGallery.html">Photo Gallery</a>
+            <a href="sitemap.html">Site map</a>
+            <a href="sourcelog.html">Source Log</a>
+            <a href="Feedback.html">Give feedback</a>
+            <a href="assignment.html">Assignment Page</a>
+        </div>
+    </div>
+
+    <!-- main content -->
+    <div class="feedback-form">
+        <div style="text-align:center">
+            <h2>We Value Your Feedback</h2>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <img src="image/feed.jpg" style="width:80%" alt="">
+            </div>
+
+            <div class="column">
+                <form action="mailto:zetian.chen@anu.edu.au" method="post">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <label for="feedback-type">Type of Feedback:</label>
+                    <select id="feedback-type" name="feedback-type">
+                        <option value="general">General Feedback</option>
+                        <option value="suggestion">Suggestion</option>
+                        <option value="problem">Report a Problem</option>
+                    </select>
+
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <div class="button-container">
+                        <input type="submit" value="Submit Feedback" onclick="mailSubmit()">
+                        <input type="reset" value="Clear All">
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+
+</body>
+
+
+</html>

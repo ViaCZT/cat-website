@@ -1,0 +1,216 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* --------light box------------*/
+* {
+    box-sizing: border-box;
+}
+
+.row>.column {
+    padding: 0 8px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style for the container holding the images */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Center the content horizontally */
+    margin: 8px -4px;
+    /* Adjust margins as necessary */
+    align-items: stretch;
+}
+
+/* Style for columns within the row */
+.column {
+    float: left;
+    width: 25%;
+    flex: 1 0 25%;
+    /* Adjust the width percentage based on the number of columns you want in a row */
+    max-width: 25%;
+    /* Maximum width */
+    margin: 5px;
+    min-height: 300px;
+    padding: 4px;
+    /* Padding around the images */
+    box-sizing: border-box;
+    /* Includes padding in the element's total width and height */
+}
+
+/* Ensuring the images resize within the columns correctly */
+.column img {
+    width: 100%;
+    /* Make images fill the column width */
+    height: 100%;
+    /* Keep the aspect ratio of images */
+    cursor: pointer;
+    /* Change cursor on hover */
+    transition: transform 0.2s;
+    /* Smooth transformation on hover */
+    object-fit: cover;
+    /* Covers the area of the container without distorting the ratio */
+    display: block;
+    /* Removes bottom space/gap */
+}
+
+/* Hover effect for images */
+.column img:hover {
+    transform: scale(1.1);
+    /* Scale images on hover */
+}
+
+/* Media queries for responsive adjustments */
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+
+
+/* ----------The box (background)--------- */
+.box {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+}
+
+/* for box Content */
+.box-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.mySlides {
+    display: none;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+/* Next and previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Position the "prev button" to the left */
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/10 to 10/10) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 30px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+img {
+    margin-bottom: -4px;
+}
+
+.caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+}
+
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+img.hover-shadow {
+    transition: 0.3s;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.description {
+    white-space: normal;
+    /* To wrap the text */
+    text-align: justify;
+    padding: 8px;
+}
