@@ -6,7 +6,7 @@
   background-position: center;
   /* 去掉固定高度，用弹性内边距让背景区随内容自适应 */
   /* let background area grow with content */
-  padding: clamp(40px, 8vw, 80px) 0;
+  padding: clamp(40px, 1vw, 80px) 0;
 }
 
 .text {
@@ -60,22 +60,26 @@
   width: 100%;
   /* 高度交给内容自适应，避免溢出 */
   height: auto; /* Make the height adapt to content to avoid overflow */
+
 }
 
 #history .history-container {
   display: flex;
-  align-items: stretch;     /* Align top edges for a neater look */ /* 顶部对齐，让视觉更整齐 */
-  gap: 20px;                  /* Space between image and text */ /* 图片与文字的间距 */
-  max-width: 1000px;          /* limit line length */ /* 可选：限制一行过长 */
+  align-items: center;
+  gap: clamp(16px, 2vw, 36px);        /* Space between image and text */ /* 图片与文字的间距 */
+  width: min(95vw, 1600px);
   margin: 0 auto;             /* center content */ /* 可选：居中内容 */
-  padding: 10px 0;            /* vertical padding */ /* 可选：上下留白 */
+  padding: clamp(8px, 1vw, 24px);            /* vertical padding */ /* 可选：上下留白 */
 }
 
 #history .history-container img {
-  /* 让图片“适度”占宽：最小 220px，常态约 35vw，上限 420px */
-  /* Make the image reasonably sized: min 220px, normally ~35vw, max 420px */
-  width: clamp(220px, 35vw, 420px);
-  height: auto;               /* Keep aspect ratio */ /* 等比缩放 */
+  height: auto;
+  width: auto;
+  /* 宽高都给自适应上限：大屏也不会过大 */
+  /* 让图片“适度”占宽：最小 280px，常态约 36vw，上限 560px */
+  /* Make the image reasonably sized: min 280px, normally ~36vw, max 560px */
+  max-width: clamp(280px, 36vw, 560px);
+  max-height: clamp(260px, 58vh, 520px);
   flex: 0 0 auto;             /* Fix its width, not squeezed by text */ /* 固定自身宽度，不被文本挤压 */
   display: block;
   object-fit: cover;      /* Crop/fill to keep ratio, avoid stretching */ /* 裁切/填充以保持比例，避免拉伸 */
@@ -87,15 +91,19 @@
 
 #history .history-container p {
   flex: 1 1 auto;             /* Text takes remaining space */ /* 文本占据剩余空间 */
-  line-height: 1.75;
-  margin: 0;
+  font-size: clamp(16px, 3.15vw, 20px);
+  line-height: 1.8;
+  margin: 10;
   text-align: justify;   /* Justify text */ /* 文字两端对齐 */
+  padding-right: clamp(24px, 1vw, 120px);
 }
 
 /* On small screens, switch to vertical layout */ /* 小屏幕时改为上下布局 */
 @media (max-width: 768px) {
   #history .history-container {
     flex-direction: column;
+    width: 92vw;     /* 小屏略收紧边距更好看 */
+    align-items: stretch;   /* Align top edges for a neater look */ /* 小屏宽度自适应填满，顶部对齐 */
   }
   #history .history-container img {
     width: 100%;
